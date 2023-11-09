@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Study easier with pomodoro timer</h1>
+        <a href="definition.html"><p>What is pomodoro timer?</p></a>
+    </header>
+    <main>
+        <img id="main_picture" src="./assets/tomato_clock.png">
+        <div class="options">
+            <div class="setting">
+                <h2>How long at a time would you like to study?</h2>
+                <p>Typically you should study for 25 minutes at a time, but you can change it here</p>
+                <select id="pomodoro_time">
+                    <option disabled>Select duration</option>
+                    <option value="1" selected>1 min (test)</option>
+                    <option value="15">15 min</option>
+                    <option value="20">20 min</option>
+                    <option value="25">25 min</option>
+                    <option value="30">30 min</option>
+                </select>
+            </div>
+            <div class="setting">
+                <h2>How long would you like to rest?</h2>
+                <p>You can have a 3 to 10 minutes rest after each pomodoro</p>
+                <select id="rest_time">
+                    <option disabled>Select duration</option>
+                    <option value="1" selected>1 min (test)</option>
+                    <option value="3">3 min</option>
+                    <option value="5">5 min</option>
+                    <option value="7">7 min</option>
+                    <option value="10">10 min</option>
+                </select>
+            </div>
+            <div class="setting">
+                <h2>How many pomodoro rounds before a longer break?</h2>
+                <p>4 rounds are recommended, but you can choose</p>
+                <select id="pomodoro_rounds">
+                    <option disabled>Select duration</option>
+                    <option value="2">2 pomodoro</option>
+                    <option value="3">3 pomodoro</option>
+                    <option value="4">4 pomodoro</option>
+                    <option value="5">5 pomodoro</option>
+                </select>
+            </div>
+        </div>
+        <div class="start_section">
+            <button id="start">Start session...</button>
+            <p id="description">
+            </p>
+            <audio id="signal">
+                <source src="./assets/signal.wav" type="audio/wav">
+            </audio>
+            <audio id="complete">
+                <source src="./assets/magic.wav" type="audio/wav">
+            </audio>
+        </div>
+        <div class="countdown-container">
+            <div id="countdown">00:00:00</div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.freepik.com/free-vector/tomato-slice-cartoon-vector-icon-illustration-food-object-icon-concept-isolated-premium-vector_25510184.htm#page=6&query=tomato&position=5&from_view=search&track=sph">Image by catalyststuff on Freepik</a> 
+        <a href="https://www.freepik.com/free-vector/stopwatch-timer-cartoon-icon-illustration_11759983.htm#query=timer&position=26&from_view=search&track=sph">Image by catalyststuff on Freepik</a>
+        <a href="https://www.freepik.com/free-vector/colorful-set-cut-full-red-tomatoes-cartoon-illustration_16369051.htm#query=tomato&position=0&from_view=search&track=sph">Image by pch.vector on Freepik</a> 
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
